@@ -95,5 +95,5 @@ BSD
 Contributors
 ------------------
 
-Julien Roubieu - jroubieu gmail com
-Amnay Mo - amnay.m gmail com
+* Julien Roubieu - jroubieu gmail com
+* Amnay Mo - amnay.m gmail com
