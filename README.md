@@ -12,7 +12,7 @@ It comes with Vagrant configuration to test the role.
 Requirements
 ------------
 
-This role was tested on Ubuntu Precise (12).
+This role was tested on Ubuntu Precise (12) and Debian Jessie (8).
 
 Optional: Install Vagrant if you plan to use it.
 
@@ -92,7 +92,8 @@ License
 
 BSD
 
-Author Information
+Contributors
 ------------------
 
 Julien Roubieu - jroubieu gmail com
+Amnay Mo - amnay.m gmail com
