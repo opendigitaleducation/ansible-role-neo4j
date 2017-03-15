@@ -4,25 +4,33 @@
 # Specify which Neo4j version you want to install
 # ==================================================
 neo4j_package: neo4j-enterprise
-neo4j_package_version: 2.0.0
+neo4j_package_version: 2.3.2
 
 # ==================================================
 # Server configuration
 # ==================================================
 
 neo4j_server_database_location: data/graph.db
+neo4j_server_thirdparty_jaxrs_classes: []
 
 # Let the webserver only listen on the specified IP. Default is localhost (only
 # accept local connections). Uncomment to allow any connection. Please see the
 # security section in the neo4j manual before modifying this.
-# neo4j_server_webserver_address: 0.0.0.0
 
+neo4j_server_webserver_address: 0.0.0.0
 neo4j_server_webserver_port: 7474
 neo4j_server_webserver_https_enabled: true
 neo4j_server_webserver_https_port: 7473
 neo4j_server_webserver_https_cert_location: conf/ssl/snakeoil.cert
 neo4j_server_webserver_https_key_location: conf/ssl/snakeoil.key
 neo4j_server_webserver_https_keystore_location: data/keystore
+
+neo4j_plugins: []
+# neo4j_plugins: 
+#  - url: "http://maven.web-education.net/nexus/content/groups/wse-public/fr/wseduc/ent-core-neo4j-plugin/0.1.0/ent-core-neo4j-plugin-0.1.0.jar"
+#    filename: "ent-core-neo4j-plugin-0.1.0.jar"
+
+
 
 # ==================================================
 # Administration client configuration
@@ -39,3 +47,7 @@ neo4j_server_database_mode: SINGLE
 # ==================================================
 neo4j_server_http_log_enabled: false
 neo4j_server_http_log_config: conf/neo4j-http-logging.xml
+
+# ==================================================
+# neo4j_wrapper
+# ==================================================

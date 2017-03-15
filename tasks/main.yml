@@ -41,5 +41,14 @@
   lineinfile: dest=/etc/pam.d/su  regexp="^(# )?session    required   pam_limits.so" line="session    required   pam_limits.so" state=present
   notify: Reboot
 
+- name: Setting /var/lib/neo4j/conf/jmx.password attributes
+  file: name=/var/lib/neo4j/conf/jmx.password mode=0600
+  notify: Restart neo4j
+
+- name: Downloading plugins
+  get_url: url={{ item.url }} dest=/var/lib/neo4j/plugins/{{ item.filename }} owner=neo4j group=adm
+  with_items: "{{ neo4j_plugins }}"
+  notify: Restart neo4j
+
 - name: Ensure Neo4j service is enabled and started
   service: name=neo4j-service enabled=yes state=started
