@@ -51,3 +51,5 @@ neo4j_server_http_log_config: conf/neo4j-http-logging.xml
 # ==================================================
 # neo4j_wrapper
 # ==================================================
+neo4j_wrapper_xmx: '4096'
+
