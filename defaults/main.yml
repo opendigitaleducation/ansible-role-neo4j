@@ -4,7 +4,7 @@
 # Specify which Neo4j version you want to install
 # ==================================================
 neo4j_package: neo4j-enterprise
-neo4j_package_version: 2.3.2
+neo4j_package_version: 3.1.1
 
 # ==================================================
 # Server configuration
@@ -25,10 +25,10 @@ neo4j_server_webserver_https_cert_location: conf/ssl/snakeoil.cert
 neo4j_server_webserver_https_key_location: conf/ssl/snakeoil.key
 neo4j_server_webserver_https_keystore_location: data/keystore
 
-neo4j_plugins: []
-# neo4j_plugins: 
-#  - url: "http://maven.web-education.net/nexus/content/groups/wse-public/fr/wseduc/ent-core-neo4j-plugin/0.1.0/ent-core-neo4j-plugin-0.1.0.jar"
-#    filename: "ent-core-neo4j-plugin-0.1.0.jar"
+#neo4j_plugins: []
+neo4j_plugins: 
+  - url: "http://maven.web-education.net/nexus/content/groups/wse-public/fr/wseduc/ent-core-neo4j-plugin/0.2-SNAPSHOT/ent-core-neo4j-plugin-0.2-20170314.175123-4.jar"
+    filename: "ent-core-neo4j-plugin-0.2.0.jar"
 
 
 
