@@ -27,7 +27,7 @@ neo4j_server_webserver_https_keystore_location: data/keystore
 
 #neo4j_plugins: []
 neo4j_plugins: 
-  - url: "http://maven.web-education.net/nexus/content/groups/wse-public/fr/wseduc/ent-core-neo4j-plugin/0.2-SNAPSHOT/ent-core-neo4j-plugin-0.2-20170314.175123-4.jar"
+  - url: "http://maven.opendigitaleducation.com/nexus/content/groups/wse-public/fr/wseduc/ent-core-neo4j-plugin/0.2-SNAPSHOT/ent-core-neo4j-plugin-0.2-20170314.175123-4.jar"
     filename: "ent-core-neo4j-plugin-0.2.0.jar"
 
 
