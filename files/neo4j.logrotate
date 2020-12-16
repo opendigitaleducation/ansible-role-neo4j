@@ -1,0 +1,11 @@
+/var/log/neo4j/*.log {
+    weekly
+    rotate 10
+    compress
+    missingok
+    notifempty
+    sharedscripts
+    dateext
+    copytruncate
+    su neo4j neo4j
+}
