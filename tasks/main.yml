@@ -20,7 +20,7 @@
 
 - name: Ensure limits are enabled
   lineinfile: dest=/etc/pam.d/su  regexp="^(# )?session    required   pam_limits.so" line="session    required   pam_limits.so" state=present
-  notify: Reboot
+#  notify: Reboot
 
 - name: Setting /etc/neo4j/jmx.password attributes
   file: name=/etc/neo4j/jmx.password mode=0600
